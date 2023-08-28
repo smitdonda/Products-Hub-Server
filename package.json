@@ -7,7 +7,7 @@
   },
   "scripts": {
     "prettier": "prettier --write --config .prettierrc.json \"**/*.js\"",
-    "start": "node ./bin/www"
+    "dev": "nodemon ./bin/www"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
