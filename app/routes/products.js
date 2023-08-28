@@ -10,7 +10,7 @@ const {
   getProductById,
 } = require("../controllers/allProducts");
 
-// all Products routes
+// Products routes
 
 // get all Products
 router.get("/", requireAuth, getAllProducts);
