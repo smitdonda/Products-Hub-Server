@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const allfeshionproductSchema = new mongoose.Schema(
   {
@@ -9,12 +9,12 @@ const allfeshionproductSchema = new mongoose.Schema(
     specifications: [String],
     size: [String],
     description: { type: String },
-    material: { type: String },
+    material: { type: String }
   },
   {
-    collection: "allfeshionproduct",
-    versionKey: false,
+    collection: 'allfeshionproduct',
+    versionKey: false
   }
-);
+)
 
-module.exports = mongoose.model("allfeshionproduct", allfeshionproductSchema);
+module.exports = mongoose.model('allfeshionproduct', allfeshionproductSchema)

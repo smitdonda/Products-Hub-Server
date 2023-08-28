@@ -1,4 +1,4 @@
-const { signUp } = require("./signUp");
-const { logIn } = require("./logIn");
+const { signUp } = require('./signUp')
+const { logIn } = require('./logIn')
 
-module.exports = { signUp, logIn };
+module.exports = { signUp, logIn }
