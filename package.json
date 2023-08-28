@@ -6,7 +6,6 @@
     "node": "18.x"
   },
   "scripts": {
-    "dev": "nodemon --inspect=9230 app.js",
     "prettier": "prettier --write --config .prettierrc.json \"**/*.js\"",
     "start": "node ./bin/www"
   },

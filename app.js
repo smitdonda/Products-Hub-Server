@@ -10,8 +10,6 @@ const initMongo = require('./config/mongo')
 
 const app = express()
 
-console.log(process.env.NODE_ENV)
-
 // View engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.engine('html', require('ejs').renderFile)

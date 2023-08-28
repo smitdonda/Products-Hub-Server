@@ -2,7 +2,11 @@ const AllProducts = require('../../models/allProducts')
 
 const getAllProducts = async (req, res) => {
   try {
-    const products = await AllProducts.find({})
+    const products = await AllProducts.find({}).select({
+      name: 1,
+      images: 1,
+      price: 1
+    })
     if (products) {
       res.json({
         statusCode: 200,
