@@ -1,5 +1,5 @@
 const User = require('../../models/users')
-const { hashPassword } = require('../../utils/authHepler')
+const { hashPassword } = require('./helper/authHepler')
 
 const signUp = async (req, res) => {
   try {

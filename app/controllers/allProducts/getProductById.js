@@ -1,6 +1,7 @@
 const AllProducts = require('../../models/allProducts')
 const { isIDGood } = require('../../utils/isIDGood')
 
+// product Find with _id
 const getProductById = async (req, res) => {
   try {
     const id = await isIDGood(req.params.productId)
@@ -8,7 +9,7 @@ const getProductById = async (req, res) => {
 
     if (!result) {
       return res.status(404).json({
-        statusCode: 500,
+        statusCode: 404,
         message: 'Not Found Category'
       })
     }

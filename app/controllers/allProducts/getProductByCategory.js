@@ -1,5 +1,6 @@
 const AllProducts = require('../../models/allProducts')
 
+// find the Product in Category
 const getProductByCategory = async (req, res) => {
   try {
     const { categoryName } = req.params
@@ -7,7 +8,7 @@ const getProductByCategory = async (req, res) => {
 
     if (!result) {
       return res.status(404).json({
-        statusCode: 500,
+        statusCode: 404,
         message: 'Not Found Product By Category'
       })
     }

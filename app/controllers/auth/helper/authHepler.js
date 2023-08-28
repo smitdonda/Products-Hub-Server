@@ -1,6 +1,5 @@
 const bcrypt = require('bcryptjs')
 const JWT = require('jsonwebtoken')
-const JWTD = require('jwt-decode')
 
 const secret = process.env.JWT_SECRET
 const saltRound = 10

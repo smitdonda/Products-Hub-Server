@@ -23,7 +23,7 @@ const requireAuth = async (req, res, next) => {
     } else if (error.name === 'TokenExpiredError') {
       return res.status(401).json({
         success: false,
-        message: 'Session expired, please sign in again'
+        message: 'Session expired, please login in again'
       })
     } else {
       console.log('error', error)
